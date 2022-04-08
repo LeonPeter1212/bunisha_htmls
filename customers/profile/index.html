@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bunisha</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!-- inject:css-->
+
+    <link rel="stylesheet" href="/assets/css/plugin.min.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/dev.css">
+
+    <!-- endinject -->
+
+</head>
+
+<body class="layout-light side-menu overlayScroll">
+    <div class="mobile-search"></div>
+
+    <div class="mobile-author-actions"></div>
+    <header class="header-top">
+        <nav class="navbar navbar-light">
+            <div class="navbar-left">
+                <a href="#" class="sidebar-toggle">
+                    <img class="svg" src="/assets/img/svg/bars.svg" alt="img"></a>
+                <a class="navbar-brand" href="/"><img class="dark" src="/assets/img/logo.png"><img
+                        class="light" src="/assets/img/logo.png" alt="img"></a>
+            </div>
+            <!-- ends: navbar-left -->
+
+            <div class="navbar-right">
+                <ul class="navbar-right__menu">
+                    <li class="">
+                        <form class="search-form">
+                            <span data-feather="search"></span>
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search..."
+                                aria-label="Search">
+                        </form>
+                    </li>
+                    <li class="nav-search d-none">
+                        <a href="#" class="search-toggle">
+                            <i class="la la-search"></i>
+                            <i class="la la-times"></i>
+                        </a>
+                        <form class="search-form-topMenu">
+                            <span class="search-icon" data-feather="search"></span>
+                            <input class="form-control mr-sm-2 box-shadow-none" type="search" placeholder="Search..."
+                                aria-label="Search">
+                        </form>
+                    </li>
+                    <li class="nav-message">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle">
+                                <span data-feather="mail"></span></a>
+                        </div>
+                    </li>
+                    <!-- ends: nav-message -->
+                    <li class="nav-author">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle">
+                                JD
+                            </a>
+                            <div class="dropdown-wrapper">
+                                <div class="nav-author__info">
+                                    <div class="author-img">
+                                        JD
+                                        <!-- <img src="/assets/img/author-nav.jpg" alt="" class="rounded-circle"> -->
+                                    </div>
+                                    <div>
+                                        <h6>John Doe</h6>
+                                        <span>Title Here</span>
+                                    </div>
+                                </div>
+                                <div class="nav-author__options">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span data-feather="user"></span> Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span data-feather="settings"></span> Settings</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="nav-author__signout">
+                                        <span data-feather="log-out"></span> Sign Out</a>
+                                </div>
+                            </div>
+                            <!-- ends: .dropdown-wrapper -->
+                        </div>
+                    </li>
+                    <!-- ends: .nav-author -->
+                </ul>
+                <!-- ends: .navbar-right__menu -->
+                <div class="navbar-right__mobileAction d-md-none">
+                    <a href="#" class="btn-search">
+                        <span data-feather="search"></span>
+                        <span data-feather="x"></span></a>
+                    <a href="#" class="btn-author-action">
+                        <span data-feather="more-vertical"></span></a>
+                </div>
+            </div>
+            <!-- ends: .navbar-right -->
+        </nav>
+    </header>
+    <main class="main-content">
+
+        <aside class="sidebar">
+            <div class="sidebar__menu-group">
+                <ul class="sidebar_nav">
+                    <li>
+                        <a href="/" class="active">
+                            <span data-feather="home" class="nav-icon"></span>
+                            <span class="menu-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/customers/">
+                            <span data-feather="users" class="nav-icon"></span>
+                            <span class="menu-text">Customers</span>
+                        </a>
+                    </li>
+                    <li class="has-child">
+                        <a href="#">
+                            <span data-feather="shopping-bag" class="nav-icon"></span>
+                            <span class="menu-text">Companies</span>
+                            <span class="toggle-icon"></span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a class="" href="#">Onboard Company</a>
+                            </li>
+                            <li>
+                                <a class="" href="#">Transfer Company</a>
+                            </li>
+                            <li>
+                                <a class="" href="/companies/manage/">Manage Companies</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <span data-feather="file" class="nav-icon"></span>
+                            <span class="menu-text">Bid Bonds</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span data-feather="mail" class="nav-icon"></span>
+                            <span class="menu-text">Messages</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="contents">
+
+            <div class="container-fluid">
+                <div class="social-dash-wrap">
+                    <div class="row">
+                        <!-- <div class="col-lg-12">
+                                </div> -->
+
+                        <div class="col-lg-12">
+
+                            <div class="breadcrumb-main">
+                                <ul class="atbd-breadcrumb nav">
+                                    <li class="atbd-breadcrumb__item">
+
+                                        <a href="/">
+                                            Dashboard
+                                        </a>
+                                        <span class="breadcrumb__seperator">
+                                            <span class="la la-slash"></span>
+                                        </span>
+
+
+                                    </li>
+                                    <li class="atbd-breadcrumb__item">
+                                        <a href="/customers/">Customers</a>
+                                        <span class="breadcrumb__seperator">
+                                            <span class="la la-slash"></span>
+                                        </span>
+                                    </li>
+                                    <li class="atbd-breadcrumb__item">
+                                        <a href="#">Diana</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4 class="text-capitalize breadcrumb-title mb-4">Profile Overview</h4>
+
+                        </div>
+                        <div class="col-xxl-3 col-lg-4 col-sm-12">
+                            <!-- Profile Acoount -->
+                            <div class="card mb-25">
+                                <div class="card-body text-center p-0">
+
+                                    <div
+                                        class="account-profile border-bottom pt-25 px-25 pb-0 d-flex align-items-center ">
+                                        <div class="ap-img mb-20 pro_img_wrapper">
+                                            JD
+                                        </div>
+                                        <div class="ap-nameAddress pb-3 pl-3">
+                                            <h5 class="ap-nameAddress__title">Diana James</h5>
+                                            <p class="ap-nameAddress__subTitle fs-14 m-0">Non-account holder</p>
+                                        </div>
+                                    </div>
+                                    <div class="ps-tab p-20 pb-25">
+                                        <ul class="d-flex flex-column">
+                                            <li>
+                                                <div
+                                                    class="statistics-item statistics-default d-flex flex-row align-items-center my-2">
+                                                    <span class="font-bold text-black min120">Created:</span>
+                                                    <p class="statistics-item__number ml-2 mt-0 text-sm">
+                                                        9th Nov 2021, 10:03 am
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    class="statistics-item statistics-default d-flex flex-row align-items-center my-2">
+                                                    <span class="font-bold text-black min120">By:</span>
+                                                    <p class="statistics-item__number ml-2 mt-0 text-sm">
+                                                        John Doe
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    class="statistics-item statistics-default d-flex flex-row align-items-center my-2">
+                                                    <span class="font-bold text-black min120">Status:</span>
+                                                    <p class="statistics-item__number ml-2 mt-0 text-sm">
+                                                        <span
+                                                            class="bg-opacity-success color-success rounded-pill userDatatable-content-status active m-0 text-sm">active</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Profile Acoount End -->
+                        </div>
+                        <div class="col-xxl-9 col-lg-8 col-sm-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <h6>Basic card</h6>
+                                        </div>
+                                        <ul class="card-body list-box p-0">
+                                            <li class="list-box__item">
+                                                <div
+                                                    class="statistics-item statistics-default d-flex flex-row align-items-center my-2">
+                                                    <span class="font-bold text-black min120">Personal
+                                                        details:</span>
+                                                    <p class="statistics-item__number ml-2 mt-0 text-sm">Diana
+                                                        James</p>
+                                                </div>
+                                            </li>
+                                            <li class="list-box__item">
+                                                <div
+                                                    class="statistics-item statistics-default d-flex flex-row align-items-center my-2">
+                                                    <span class="font-bold text-black min120">Phone
+                                                        number:</span>
+                                                    <p class="statistics-item__number ml-2 mt-0 text-sm">0712
+                                                        345678</p>
+                                                </div>
+                                            </li>
+                                            <li class="list-box__item">
+                                                <div
+                                                    class="statistics-item statistics-default d-flex flex-row align-items-center my-2">
+                                                    <span class="font-bold text-black min120">Email:</span>
+                                                    <p class="statistics-item__number ml-2 mt-0 text-sm">
+                                                        creatives@bunisha.com</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    <div class="col-12">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h6>Account Activity</h6>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="table4 bg-white">
+                                    <div class="table-responsive">
+                                        <table class="table mb-0">
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="userDatatable-content">
+                                                            Companies
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="userDatatable-content">
+                                                            5
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="userDatatable-content text-right">
+                                                            <a href="/customers/profile/companies/">View</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="userDatatable-content">
+                                                            Bid Bonds
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="userDatatable-content">
+                                                            100
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="userDatatable-content text-right">
+                                                            <a href="">View</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="userDatatable-content">
+                                                            Subscriptions
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="userDatatable-content">
+                                                            11
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="userDatatable-content text-right">
+                                                            <a href="">View</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-copyright">
+                            <p>2022 @<a href="#">Bunisha</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+    </div>
+    <div class="overlay-dark-sidebar"></div>
+    <div class="customizer-overlay"></div>
+
+    <!-- inject:js-->
+    <script src="/assets/js/plugins.min.js"></script>
+    <script src="/assets/js/script.min.js"></script>
+    <!-- endinject-->
+</body>
+
+
+</html>

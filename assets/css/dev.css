@@ -1,0 +1,60 @@
+.bunisha-blue {
+    color: #009FDC !important;
+}
+
+.sidebar__menu-group ul.sidebar_nav li>a.active {
+    background-color: #009FDC !important;
+}
+
+.sidebar__menu-group ul.sidebar_nav li>a:hover {
+    background-color: #009FDC !important;
+}
+
+.nav-author a.nav-item-toggle,
+.nav-author .author-img {
+    background-color: #016ab3;
+    padding: 8px;
+    color: white !important;
+    border-radius: 50px;
+}
+
+.ap-img {
+    background-color: #016ab3;
+    border-radius: 50px;
+    color: white !important;
+    min-height: 120px;
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.text-black {
+    color: black;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.text-sm {
+    font-size: 14px !important;
+}
+
+.min120 {
+    min-width: 120px;
+}
+
+.ps-tab .statistics-item {
+    align-items: flex-start !important;
+    text-align: left;
+}
+
+.statistics-item .min120 {
+    font-size: 14px;
+}
+
+.userDatatable table thead tr:not(.footable-filtering) th span {
+    color: #fff;
+}
